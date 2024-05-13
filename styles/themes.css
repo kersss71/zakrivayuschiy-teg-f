@@ -4,3 +4,62 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --font-weight-text: 465;
+  --font-weight-title: 785;
+  --font-weight-regular: 400;
+  --accent-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --background-color: #000;
+  --border-color: #00cc14;
+  --label-shadow-color: #000;
+  --hover-color: #00cc14;
+  --heart-contour-color: #00cc14;
+}
+
+:root.theme-light {
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --font-weight-regular: 400;
+  --accent-color: #000;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --background-color: #fff;
+  --border-color: #000;
+  --label-shadow-color: #fff;
+  --hover-color: #fff;
+  --heart-contour-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-text: 465;
+    --font-weight-title: 785;
+    --font-weight-regular: 400;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+    --background-color: #000;
+    --border-color: #00cc14;
+    --label-shadow-color: #000;
+    --hover-color: #00cc14;
+    --heart-contour-color: #00cc14;
+  }
+} 
