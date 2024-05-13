@@ -477,7 +477,7 @@
   filter: saturate(110%) hue-rotate(30deg);
 }
 
-/* media qualities*/
+/* media qualities s*/
 
 @media (width <= 400px) {
   .header {
